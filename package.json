@@ -2,6 +2,12 @@
   "name": "gittorrent",
   "description": "Using BitTorrent to share git repositories",
   "version": "0.1.9",
+  "node_deb": {
+    "start_command": "/usr/bin/env node gittorrent-remote-gittorrent",
+    "templates": {
+      "postinst": "/home/dyngar/Projects/Distro_OS_Projects/packages/gittorrent/debtemplates/postinst.template"
+    }
+  },
   "author": {
     "name": "Chris Ball",
     "email": "chris@printf.net",
